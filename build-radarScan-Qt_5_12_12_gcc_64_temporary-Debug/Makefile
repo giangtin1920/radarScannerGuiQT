@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = radarScan1.0.0
-DISTDIR = /home/giangtin/aev/radarScannerGuiQT/build-radarScan-Desktop_Qt_5_12_12_GCC_64bit-Debug/.tmp/radarScan1.0.0
+DISTDIR = /home/giangtin/aev/radarScannerGuiQT/build-radarScan-Qt_5_12_12_gcc_64_temporary-Debug/.tmp/radarScan1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-rpath,/home/giangtin/Qt5.12.12/5.12.12/gcc_64/lib
 LIBS          = $(SUBLIBS) /home/giangtin/Qt5.12.12/5.12.12/gcc_64/lib/libQt5Widgets.so /home/giangtin/Qt5.12.12/5.12.12/gcc_64/lib/libQt5Gui.so /home/giangtin/Qt5.12.12/5.12.12/gcc_64/lib/libQt5Core.so -lGL -lpthread   
@@ -221,7 +221,6 @@ DIST          = ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/spec_pre.prf 
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/qt_config.prf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/spec_post.prf \
-		../radarScan/.qmake.stash \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/toolchain.prf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/default_pre.prf \
@@ -418,7 +417,6 @@ Makefile: ../radarScan/radarScan.pro ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/l
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/qt_config.prf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/toolchain.prf \
 		../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/default_pre.prf \
@@ -604,7 +602,6 @@ Makefile: ../radarScan/radarScan.pro ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/l
 ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/qt_config.prf:
 ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/spec_post.prf:
-.qmake.stash:
 ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/toolchain.prf:
 ../../../Qt5.12.12/5.12.12/gcc_64/mkspecs/features/default_pre.prf:
@@ -796,7 +793,7 @@ moc_radarscan.cpp: ../radarScan/radarscan.h \
 		../../../Qt5.12.12/5.12.12/gcc_64/include/QtCore/QDebug \
 		moc_predefs.h \
 		../../../Qt5.12.12/5.12.12/gcc_64/bin/moc
-	/home/giangtin/Qt5.12.12/5.12.12/gcc_64/bin/moc $(DEFINES) --include /home/giangtin/aev/radarScannerGuiQT/build-radarScan-Desktop_Qt_5_12_12_GCC_64bit-Debug/moc_predefs.h -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/mkspecs/linux-g++ -I/home/giangtin/aev/radarScannerGuiQT/radarScan -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include/QtWidgets -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include/QtGui -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../radarScan/radarscan.h -o moc_radarscan.cpp
+	/home/giangtin/Qt5.12.12/5.12.12/gcc_64/bin/moc $(DEFINES) --include /home/giangtin/aev/radarScannerGuiQT/build-radarScan-Qt_5_12_12_gcc_64_temporary-Debug/moc_predefs.h -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/mkspecs/linux-g++ -I/home/giangtin/aev/radarScannerGuiQT/radarScan -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include/QtWidgets -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include/QtGui -I/home/giangtin/Qt5.12.12/5.12.12/gcc_64/include/QtCore -I. -I/usr/include/c++/7 -I/usr/include/x86_64-linux-gnu/c++/7 -I/usr/include/c++/7/backward -I/usr/lib/gcc/x86_64-linux-gnu/7/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../radarScan/radarscan.h -o moc_radarscan.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1062,33 +1059,7 @@ radarscan.o: ../radarScan/radarscan.cpp ../radarScan/radarscan.h \
 		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qgraphicsitem.h \
 		../../../Qt5.12.12/5.12.12/gcc_64/include/QtCore/QDebug \
-		ui_radarscan.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtCore/QVariant \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtCore/qcoreapplication.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtCore/qeventloop.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qdesktopwidget.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtGui/qguiapplication.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtGui/qinputmethod.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/QGraphicsView \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qgraphicsview.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtGui/qpainter.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtGui/qtextoption.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qscrollarea.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qframe.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/QMenuBar \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qmenubar.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qmenu.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qaction.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qactiongroup.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/QStatusBar \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/qstatusbar.h \
-		../../../Qt5.12.12/5.12.12/gcc_64/include/QtWidgets/QWidget
+		ui_radarscan.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o radarscan.o ../radarScan/radarscan.cpp
 
 moc_radarscan.o: moc_radarscan.cpp 
